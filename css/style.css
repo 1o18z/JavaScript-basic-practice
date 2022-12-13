@@ -1,0 +1,47 @@
+*{
+    color:white;
+    margin:0;
+    padding: 0;
+}
+.hidden{
+    display: none;
+}
+
+.back{
+    overflow: hidden;
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    bottom:0;
+    z-index: -1;
+}
+h1{
+    /* position: fixed; */
+}
+#main{
+    text-align: center;
+}
+/* #quote{
+    text-align: center;
+    font-size: 1.7em;
+} */
+#clock{
+    font-size:6em;
+    margin-top:100px;
+    margin-bottom: 50px;
+}
+#greeting{
+    font-size: 3em;
+    margin-top: 50px;
+}
+#login-form input, button{
+    color:rgb(138, 138, 138);
+}
+#login-form input{
+    width: 300px;
+    text-align: center;
+}
+#quote{
+    margin-top:50px;
+}
