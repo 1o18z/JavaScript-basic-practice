@@ -1,1 +1,1 @@
-# Chrome-app
+# Practice basic of Javascript project
