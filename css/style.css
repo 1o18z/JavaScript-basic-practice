@@ -18,6 +18,7 @@
 }
 h1{
     /* position: fixed; */
+    -webkit-text-stroke: 1px rgb(119, 119, 119);
 }
 #main{
     text-align: center;
@@ -29,19 +30,55 @@ h1{
 #clock{
     font-size:6em;
     margin-top:100px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 1px rgb(67, 67, 67);
+
 }
 #greeting{
     font-size: 3em;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
-#login-form input, button{
-    color:rgb(138, 138, 138);
+#login-form button{
+    background-color: unset;
+    border:1px solid white;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    /* color:rgb(138, 138, 138); */
 }
 #login-form input{
     width: 300px;
     text-align: center;
+    background-color: aliceblue;
+    /* border: 1px solid white; */
+    height: 20px;
+    margin-left: 55px;
+    
 }
 #quote{
     margin-top:50px;
+}
+#todo-form input{
+    width: 200px;
+    text-align: center;
+
+}
+input::placeholder{
+    color:white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+
+}
+
+#weather{
+    text-align: center;
+    margin-bottom: 30px;
+}
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+#todo-list li:first-child{
+    margin-top: 10px;
 }
