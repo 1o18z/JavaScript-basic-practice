@@ -26,4 +26,3 @@ navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 // https://api.openweathermap.org/data/2.5/weather?lat=37.59871406153743&lon=127.15875367738732&appid=aba019b457a4e1ded01627deba9d45fa
 // aba019b457a4e1ded01627deba9d45fa
 
-//url 주소 맨 뒤에 &units=metric 하면 화씨온도에서 섭씨온도로 나옴
