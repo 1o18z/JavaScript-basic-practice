@@ -1,4 +1,4 @@
-const clock = document.querySelector("h2#clock");
+const clock = document.getElementById("clock");
 
 function getClock() {
     const date = new Date();
@@ -7,6 +7,7 @@ function getClock() {
     const seconds = String(date.getSeconds()).padStart(2, "0");
 
     clock.innerText = `${hours}:${minutes}:${seconds}`;
+    // clock.style.fontSize = "50px";
 }
 
 // setInterval(sayHello, 5000); // 함수이름, 시간. 5초마다 반복

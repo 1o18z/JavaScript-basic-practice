@@ -1,0 +1,235 @@
+*{
+    color:white;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none; 
+    cursor:auto ;
+    user-select: none;
+}
+.hidden{
+    display: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/flo2.jpeg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+.back{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom:0;
+    z-index: -1;
+}
+
+#all{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    padding-top: 20px;
+}
+#main{
+    text-align: center;
+    width: 95vw;
+    height: 95vh;
+    border-radius: 10px;
+    background-color: rgba(255, 195, 185, 0.508);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#top{
+    background-color: rgba(255, 150, 148, 0.662);
+    flex: 0.13;
+    display: flex;
+    
+}
+
+#buttons{
+    display: flex;
+    flex:0.1;
+    align-items: center;
+    text-align: center;
+    padding-left: 23px;
+
+}
+.button{
+    width: 12px;
+    height: 12px;
+    margin-right: 9px;
+    border-radius: 50px;
+}
+#button1{
+    background-color: rgb(255, 99, 99);
+    border:0.1px solid rgb(212, 80, 80);
+}
+#button2{
+    background-color: rgb(245, 203, 75);
+    border:0.1px solid rgb(202, 178, 58);
+}
+#button3{
+    background-color: rgb(46, 221, 46);
+    border:0.1px solid rgb(41, 182, 41);
+}
+#tabs{
+    flex:1;
+    display: flex;
+}
+.tab{
+    flex:1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: -10px;
+    background-color: rgba(255, 255, 255, 0.192);
+    color:rgb(55, 55, 55);
+    padding-top:10px;
+    font-size: 0.9em;
+    text-align: left;
+    padding-left: 20px;
+}
+.tab:not(:last-child){
+    margin-top:10px;
+}
+.tab:not(:last-child):hover{
+    background-color: white;
+}
+.tab:last-child{
+    background-color: transparent;
+    font-size:1.8em;
+    color:white;
+    -webkit-text-stroke: 1px rgba(255, 0, 81, 0.674);
+
+}
+
+
+#middle{
+    flex: 0.1;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.618);
+}
+
+#middleleft{
+    flex: 0.15;
+    display: flex;
+    height: 28px;
+    
+}
+.logo{
+    flex:1;
+    margin-top: 7px;
+}
+#middlemiddle{
+    flex: 0.8; 
+    background-color: rgba(178, 153, 153, 0.575);
+    border-radius: 35px;
+    height: 28px;
+    margin-top:2px;
+    text-align:left;
+    padding-left: 20px;
+}
+#middlemiddle p{
+    color:rgb(61, 61, 61);
+    padding-top:5px;
+}
+
+#middleright{
+    flex: 0.15;
+    height: 28px;
+    display: flex;
+}
+#real{
+    position: relative;
+    background: rgb(255, 202, 191, 0.3);
+    backdrop-filter: blur(7px);
+    /* border-radius:10px; */
+    flex:1.7;
+    
+}
+
+#greeting{
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 2px rgb(192, 106, 105);
+    transition: scale 3s, opacity 2s;
+
+
+}
+#login-form button{
+    background-color: unset;
+    border:1px solid white;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+    /* display: none; */
+    /* color:rgb(138, 138, 138); */
+}
+#main input:first-child{
+    all:unset;
+    width: 500px;
+    text-align: left;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 40px;
+    margin: 30px 0 0 5%;
+    box-shadow: 1px 1px 5px rgb(126, 126, 126);
+    color:gray;
+} 
+#main input:last-child{
+    all:unset;
+    background-color: rgb(243, 175, 183);
+    border-radius: 20px;
+    width: 50px;
+
+}
+
+#mainimg{
+    background-image: url(/img/flo2.jpeg);
+    border-radius: 20px;
+    width: 400px;
+    height: 180px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+    
+    /* background-repeat: no-repeat; */
+}
+#todaydate{
+    display: none;
+    padding-top:80px;
+    font-size: 2.5em;
+    color: rgba(194, 194, 194, 0.08);
+    -webkit-text-stroke: 1px white;
+}
+
+#weathericon{
+    padding-top:80px;
+    font-size: 6em;
+    text-shadow: 3px 3px 8px gray ;
+    display: none;
+}
+
+#weather{
+    margin-top: 60px;
+    font-size: 2em;
+    -webkit-text-stroke: 1px gray;
+    display: none;
+}
+#todo-form{
+    display: none;
+}
+#quote{
+    display: none;
+}
+#login-form{
+    /* display: none; */
+}
