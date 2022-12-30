@@ -1,10 +1,12 @@
 // const tab1 = document.getElementById("tab1");
 // const tab2 = document.getElementById("tab2");
 // const tab3 = document.getElementById("tab3");
+
 // const tab4 = document.getElementById("tab4");
 const tabs = document.getElementById("tabs");
 const button1 = document.getElementById("button1");
 const all = document.getElementById("all");
+const icon = document.querySelector("icon");
 
 function clickTab(){
     tabs.style.borderBottomLeftRadius="10px";
@@ -15,6 +17,10 @@ function clickTab(){
 
 function outOfPage(){
     all.style.display="none";
+    icon.innerText="sdf";
+    icon.style.textAlign="center";
+    icon.style.fontSize="3em";
+    icon.style.color="white";
 }
 tabs.addEventListener('click', clickTab);
 button1.addEventListener('click', outOfPage);

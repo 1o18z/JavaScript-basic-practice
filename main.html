@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content" ce-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="background_css.css" /> -->
     <link rel="stylesheet" href="/css/main_css.css">
 </head>
 
 <body>
+    <h2 id="icon"></h2>
     <div id="all">
         <div id="main">
             <div id="top">
@@ -22,8 +23,8 @@
                 <div id="tabs">
                     <p class="tab" id="tab1">🌤 Weather</p>
                     <p class="tab" id="tab2">📋 Memo</p>
-                    <p class="tab" id="tab3">🎼 Music</p>
-                    <p class="tab" id="tab4">👩🏻‍💻 Me</p>
+                    <p class="tab" id="tab3">🐥 Me</p>
+                    <p class="tab" id="tab4">🏡 Home</p>
                     <p class="tab" id="clock"></p>
                 </div>
             </div>
@@ -44,7 +45,7 @@
             </div>
             <div id="real">
                 <div id="realborder">
-                    
+
                     <h2 id="todaydate"></h2>
                     <h1 id="weathericon"></h1>
                     <div id="weather">
@@ -52,17 +53,16 @@
                         <!-- <span></span> -->
                     </div>
                     <div id="mainimg">
-                        
+
                     </div>
                     <form id="login-form">
-                        <input required maxlength="15" type="text"
-                            placeholder="🔍   Please Enter your name" />
+                        <input required maxlength="15" type="text" placeholder="🔍   Please Enter your name" />
                         <button>Log In</button>
                     </form>
                     <h1 id="greeting"></h1>
                     <form id="todo-form">
-                        <input style="background-color: rgba(255, 255, 255, 0.037);" type="text"
-                            placeholder="Write a To Do and Press Enter" required />
+                        <h2>Memo</h2>
+                        <input type="text" placeholder="Write a To Do and Press Enter" required />
                     </form>
                     <ul id="todo-list">
 
@@ -70,10 +70,18 @@
                     <div id="quote">
                         <span></span><br>
                         <span></span>
-
+                    </div>
+                    <div id="my">
+                        <h2>Me🐥</h2>
+                        <div id="myimg">
+                            <img class="image" id="img1" src="/img/git.png">
+                            <img class="image" id="img2" src="/img/insta.png">
+                            <img class="image" id="img3" src="/img/mail.png">
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </body>
@@ -85,7 +93,8 @@
 <script src="js/todo.js"></script>
 <script src="js/weather.js"></script>
 <script src="js/tool.js"></script>
-<script src="js/weathertab.js"></script>
+<script src="js/tab.js"></script>
+
 
 
 </html>
