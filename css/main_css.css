@@ -13,9 +13,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/flo2.jpeg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+    
 }
 .back{
     position: fixed;
@@ -26,25 +24,28 @@ body{
 }
 
 #all{
-    position: relative;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
     /* overflow: hidden; */
     padding-top: 20px;
+    margin: 0 auto;
+    
 }
 #main{
     text-align: center;
     width: 95vw;
     height: 95vh;
     border-radius: 10px;
-    background-color: rgba(196, 153, 141, 0.508);
+    background-color: rgba(196, 206, 212, 0.508);
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    
 }
 #top{
-    background-color: rgba(147, 182, 218, 0.662);
+    background-color: rgba(70, 70, 70, 0.662);
     flex: 0.13;
     display: flex;
     
@@ -111,7 +112,7 @@ body{
 #middle{
     flex: 0.1;
     display: flex;
-    background-color: rgba(255, 241, 191, 0.522);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #middleleft{
@@ -126,7 +127,7 @@ body{
 }
 #middlemiddle{
     flex: 0.8; 
-    background-color: rgba(153, 144, 159, 0.449);
+    background-color: rgba(184, 180, 186, 0.449);
     border-radius: 35px;
     height: 28px;
     margin-top:2px;
@@ -137,7 +138,9 @@ body{
     color:rgb(61, 61, 61);
     padding-top:5px;
 }
-
+.middlem p{
+    color:black;
+}
 #middleright{
     flex: 0.15;
     height: 28px;
@@ -145,7 +148,7 @@ body{
 }
 #real{
     position: relative;
-    background: rgb(255, 202, 191, 0.3);
+    background: rgba(100, 100, 100, 0.528);
     backdrop-filter: blur(7px);
     /* border-radius:10px; */
     flex:1.7;
@@ -154,9 +157,9 @@ body{
 
 #greeting{
     font-size: 3em;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
-    -webkit-text-stroke: 2px rgb(255, 190, 217);
+    -webkit-text-stroke: 2px rgb(78, 78, 78);
     transition: scale 3s, opacity 2s;
 
 
@@ -173,10 +176,10 @@ body{
     /* color:rgb(138, 138, 138); */
 }
 #login-form button:hover{
-    border: 1px solid #df6884;;
-    color: #df6884;
+    border: 1px solid #5d5d5d;;
+    color: #565656;
     background-color: rgba(255, 255, 255, 0.221);
-    box-shadow: 1px 1px 5px rgb(232, 91, 100);
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
 #login-form input{
     all:unset;
@@ -192,14 +195,14 @@ body{
 } 
 
 #mainimg{
-    background-image: url(/img/flo2.jpeg);
+    background-image: url(/img/bl1.jpeg);
     border-radius: 20px;
     width: 400px;
     height: 180px;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    margin-top:60px;
+    margin-top:40px;
     
     /* background-repeat: no-repeat; */
 }
@@ -242,7 +245,8 @@ body{
 #todo-form h2{
     margin-bottom: 20px;
     font-size: 2.3em;
-
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: transparent;
 }
 #todo-list button{
     all:unset;
@@ -251,7 +255,7 @@ body{
     padding-right: 20px;
 }
 #todo-list li{
-    background:rgba(173, 118, 132, 0.46);
+    background:rgba(248, 248, 248, 0.46);
     border-bottom: 0.5px solid white;
     padding: 5px 0;
 }
@@ -276,19 +280,16 @@ body{
     display: none;
     margin-top:50px;
     font-size: 2.3em;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
 }
 .image{
     width: 100px;
     cursor: pointer;
+    margin-right: 20px;
+    margin-top: 80px;
 }
-#myimg{
-    background-color: rgba(255, 255, 255, 0.408);
-    border-radius: 20px;
-    width: 500px;
-    height: 200px;
-    margin: 100px auto; 
-    
-}
+
 #img1{
     height: 180px;
     width: 180px;
